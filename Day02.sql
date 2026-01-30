@@ -10,3 +10,5 @@ INSERT INTO Empoyees (name, department) VALUES
 ('Charlie', 'Marketing');
 
 SELECT * FROM Empoyees;
+
+DROP TABLE IF EXISTS Empoyees;
