@@ -44,3 +44,8 @@ ON p.city_id = c.city_id
 WHERE c.city_name = 'Delhi';
 
 
+SELECT p.person_name, p.age, c.city_name
+FROM Person p
+JOIN City c
+ON p.city_id = c.city_id
+WHERE p.age > 22;
