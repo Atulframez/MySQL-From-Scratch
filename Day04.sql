@@ -8,3 +8,16 @@ INSERT INTO City VALUES
 (1, 'Delhi', 'Delhi'),
 (2, 'Mumbai', 'Maharashtra'),
 (3, 'Noida', 'Uttar Pradesh');
+
+CREATE TABLE Person (
+    person_id INT PRIMARY KEY,
+    person_name VARCHAR(50),
+    age INT,
+    city_id INT,
+    FOREIGN KEY (city_id) REFERENCES City(city_id)
+);
+
+INSERT INTO Person VALUES
+(101, 'Rahul', 22, 1),
+(102, 'Anjali', 24, 2),
+(103, 'Amit', 21, 3);
