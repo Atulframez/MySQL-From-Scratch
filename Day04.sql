@@ -21,3 +21,10 @@ INSERT INTO Person VALUES
 (101, 'Rahul', 22, 1),
 (102, 'Anjali', 24, 2),
 (103, 'Amit', 21, 3);
+
+SELECT p.person_name, p.age, c.city_name
+FROM Person p
+JOIN City c ON p.city_id = c.city_id;
+
+SELECT * FROM City;
+SELECT * FROM Person;
