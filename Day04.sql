@@ -28,3 +28,10 @@ JOIN City c ON p.city_id = c.city_id;
 
 SELECT * FROM City;
 SELECT * FROM Person;
+
+
+SELECT p.person_id, p.person_name, p.age,
+       c.city_name, c.state
+FROM Person p
+INNER JOIN City c
+ON p.city_id = c.city_id;
