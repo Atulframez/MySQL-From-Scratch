@@ -35,3 +35,12 @@ SELECT p.person_id, p.person_name, p.age,
 FROM Person p
 INNER JOIN City c
 ON p.city_id = c.city_id;
+
+
+SELECT p.person_name, p.age
+FROM Person p
+JOIN City c
+ON p.city_id = c.city_id
+WHERE c.city_name = 'Delhi';
+
+
