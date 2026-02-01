@@ -49,3 +49,9 @@ FROM Person p
 JOIN City c
 ON p.city_id = c.city_id
 WHERE p.age > 22;
+
+SELECT c.city_name, MIN(p.age) AS youngest_age
+FROM Person p
+JOIN City c
+ON p.city_id = c.city_id
+GROUP BY c.city_name;
