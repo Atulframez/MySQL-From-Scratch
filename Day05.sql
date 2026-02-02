@@ -27,3 +27,14 @@ Select * FROM Employee
 
 FROM Employee e
 JOIN Department d ON e.department_id = d.department_id;
+
+DROP TABLE Employee;
+SELECT * FROM Employee;
+
+UPDATE Employee
+SET age = age + 1
+WHERE employee_id = 202;
+SELECT * FROM Employee;
+SELECT * FROM Employee;
+SELECT e.employee_id, e.employee_name, e.age,
+       d.department_name
