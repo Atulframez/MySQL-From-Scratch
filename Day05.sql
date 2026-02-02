@@ -15,3 +15,8 @@ CREATE TABLE Employee (
     department_id INT,
     FOREIGN KEY (department_id) REFERENCES Department(department_id)
 );
+
+INSERT INTO Employee VALUES
+(201, 'Suresh', 30, 1),
+(202, 'Priya', 28, 2),
+(203, 'Vikram', 35, 3);
