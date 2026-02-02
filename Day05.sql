@@ -39,4 +39,8 @@ SELECT * FROM Employee;
 SELECT e.employee_id, e.employee_name, e.age,
        d.department_name
 
-Select * FROM Department
+Select * FROM Department AS d
+FROM Employee e
+INNER JOIN Department d
+ON e.department_id = d.department_id;
+ON e.department_id = d.department_id;
