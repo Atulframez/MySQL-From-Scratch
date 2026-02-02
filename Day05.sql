@@ -23,4 +23,7 @@ INSERT INTO Employee VALUES
 
 SELECT e.employee_name, e.age, d.department_name
 
-Select * FROM Employee 
+Select * FROM Employee
+
+FROM Employee e
+JOIN Department d ON e.department_id = d.department_id;
