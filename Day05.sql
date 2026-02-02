@@ -38,3 +38,5 @@ SELECT * FROM Employee;
 SELECT * FROM Employee;
 SELECT e.employee_id, e.employee_name, e.age,
        d.department_name
+
+Select * FROM Department
