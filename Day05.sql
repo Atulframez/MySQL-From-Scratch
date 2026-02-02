@@ -20,3 +20,6 @@ INSERT INTO Employee VALUES
 (201, 'Suresh', 30, 1),
 (202, 'Priya', 28, 2),
 (203, 'Vikram', 35, 3);
+
+SELECT e.employee_name, e.age, d.department_name
+FROM Employee e
