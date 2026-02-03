@@ -22,3 +22,7 @@ INSERT INTO Computer VALUES
 (1, 'Desktop'),
 (2, 'Laptop');
 
+INSERT INTO Student VALUES
+(101, 'Amit', 1),
+(102, 'Neha', 2);
+
