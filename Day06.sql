@@ -17,3 +17,4 @@ REFERENCES parent_table(primary_key_column);
   FOREIGN KEY (city_id) REFERENCES City(city_id)
 );
 
+SELECT * FROM Person01;
