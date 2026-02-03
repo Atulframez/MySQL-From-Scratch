@@ -27,3 +27,9 @@ INSERT INTO Student VALUES
 (102, 'Neha', 2);
 
 SELECT * FROM Student;
+
+SELECT s.student_id, s.student_name, c.computer_name
+FROM Student s
+JOIN Computer c
+ON s.computer_id = c.computer_id;
+
