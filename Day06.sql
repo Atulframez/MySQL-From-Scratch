@@ -6,5 +6,8 @@ Iska use data consistency maintain karne ke liye hota hai.
 
 ## Basic FOREIGN KEY Syntax
 
-
+CREATE TABLE Computer (
+    computer_id INT PRIMARY KEY,
+    computer_name VARCHAR(30)
+);
 
