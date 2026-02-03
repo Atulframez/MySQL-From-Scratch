@@ -11,3 +11,9 @@ REFERENCES parent_table(primary_key_column);
 
 ## Example: City & Person (Most Common Lab Example)
     Parent Table (City)
+
+    CREATE TABLE Person01 (
+  city_id INT,
+  FOREIGN KEY (city_id) REFERENCES City(city_id)
+);
+
