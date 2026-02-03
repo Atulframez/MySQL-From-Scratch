@@ -17,3 +17,8 @@ CREATE TABLE Student (
     computer_id INT,
     FOREIGN KEY (computer_id) REFERENCES Computer(computer_id)
 );
+
+INSERT INTO Computer VALUES
+(1, 'Desktop'),
+(2, 'Laptop');
+
