@@ -26,3 +26,4 @@ INSERT INTO Student VALUES
 (101, 'Amit', 1),
 (102, 'Neha', 2);
 
+SELECT * FROM Student;
