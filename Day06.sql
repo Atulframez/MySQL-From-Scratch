@@ -35,3 +35,5 @@ INSERT INTO City VALUES
 (1, 'New York'),
 (2, 'Los Angeles'),
 (3, 'Chicago');
+
+SHOW ENGINE INNODB STATUS;
