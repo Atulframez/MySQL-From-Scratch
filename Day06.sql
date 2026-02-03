@@ -11,3 +11,9 @@ CREATE TABLE Computer (
     computer_name VARCHAR(30)
 );
 
+CREATE TABLE Student (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(30),
+    computer_id INT,
+    FOREIGN KEY (computer_id) REFERENCES Computer(computer_id)
+);
