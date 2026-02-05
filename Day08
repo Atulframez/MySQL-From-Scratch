@@ -95,3 +95,9 @@ CREATE TABLE Books (
     CONSTRAINT fk_book_publisher FOREIGN KEY (publisher_id) REFERENCES Publishers(publisher_id),
     CONSTRAINT fk_book_category FOREIGN KEY (category_id) REFERENCES Categories(category_id)
 ) ENGINE=InnoDB;
+
+CREATE TABLE Librarians (
+    librarian_id INT PRIMARY KEY,
+    librarian_name VARCHAR(50),
+    shift VARCHAR(20)
+) ENGINE=InnoDB;
