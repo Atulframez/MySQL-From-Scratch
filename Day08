@@ -114,3 +114,19 @@ CREATE TABLE Issue (
     CONSTRAINT fk_issue_book FOREIGN KEY (book_id) REFERENCES Books(book_id),
     CONSTRAINT fk_issue_librarian FOREIGN KEY (librarian_id) REFERENCES Librarians(librarian_id)
 ) ENGINE=InnoDB;
+
+INSERT INTO Authors VALUES
+(1,'Korth','USA'),
+(2,'Tanenbaum','Netherlands');
+
+INSERT INTO Publishers VALUES
+(1,'Pearson','Delhi'),
+(2,'McGraw Hill','Mumbai');
+
+INSERT INTO Categories VALUES
+(1,'DBMS'),
+(2,'Networking');
+
+INSERT INTO Librarians VALUES
+(1,'Ravi','Morning'),
+(2,'Sneha','Evening');
