@@ -28,3 +28,18 @@ CREATE TABLE Issue (
         FOREIGN KEY (book_id) REFERENCES Books(book_id)
 ) ENGINE=InnoDB;
 
+INSERT INTO Members VALUES
+(1,'Amit','amit@gmail.com','9876543210'),
+(2,'Neha','neha@gmail.com','9123456780'),
+(3,'Rahul','rahul@gmail.com','9012345678');
+
+INSERT INTO Books VALUES
+(101,'DBMS Concepts','Korth',450.00,5),
+(102,'Operating System','Galvin',550.00,3),
+(103,'Computer Networks','Tanenbaum',600.00,4);
+
+INSERT INTO Issue VALUES
+(1,1,101,'2026-02-01','2026-02-10'),
+(2,2,102,'2026-02-03','2026-02-12'),
+(3,3,103,'2026-02-05',NULL);
+-- Query to find all books issued by member with member_id = 2
