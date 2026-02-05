@@ -81,3 +81,17 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE Books;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+CREATE TABLE Books (
+    book_id INT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    price DECIMAL(7,2),
+    available_copies INT,
+    author_id INT,
+    publisher_id INT,
+    category_id INT,
+    CONSTRAINT fk_book_author FOREIGN KEY (author_id) REFERENCES Authors(author_id),
+    CONSTRAINT fk_book_publisher FOREIGN KEY (publisher_id) REFERENCES Publishers(publisher_id),
+    CONSTRAINT fk_book_category FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+) ENGINE=InnoDB;
