@@ -130,3 +130,8 @@ INSERT INTO Categories VALUES
 INSERT INTO Librarians VALUES
 (1,'Ravi','Morning'),
 (2,'Sneha','Evening');
+
+
+INSERT INTO Books VALUES
+(101,'DBMS Concepts',450,5,1,1,1),
+(102,'Computer Networks',600,4,2,2,2);
