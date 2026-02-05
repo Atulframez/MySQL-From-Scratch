@@ -63,3 +63,11 @@ CREATE TABLE Authors (
     author_name VARCHAR(50) NOT NULL,
     country VARCHAR(30)
 ) ENGINE=InnoDB;
+
+
+CREATE TABLE Publishers (
+    publisher_id INT PRIMARY KEY,
+    publisher_name VARCHAR(50),
+    city VARCHAR(30)
+) ENGINE=InnoDB;
+
