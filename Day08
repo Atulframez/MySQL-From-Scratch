@@ -76,3 +76,4 @@ CREATE TABLE Categories (
     category_name VARCHAR(30)
 ) ENGINE=InnoDB;
 
+DROP TABLE Books;
