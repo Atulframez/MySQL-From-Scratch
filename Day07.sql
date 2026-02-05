@@ -9,7 +9,7 @@ CREATE TABLE Departments001 (
 -- ===============================
 -- 2. Students Table
 -- ===============================
-CREATE TABLE Students (
+CREATE TABLE Students001 (
     student_id INT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     age INT,
@@ -17,7 +17,7 @@ CREATE TABLE Students (
     dept_id INT,
     CONSTRAINT fk_stud_dept
     FOREIGN KEY (dept_id)
-    REFERENCES Departments(dept_id)
+    REFERENCES Departments001(dept_id)
 ) ENGINE=InnoDB;
 
 -- ===============================
@@ -31,13 +31,13 @@ CREATE TABLE Employees (
     dept_id INT,
     CONSTRAINT fk_emp_dept
     FOREIGN KEY (dept_id)
-    REFERENCES Departments(dept_id)
+    REFERENCES Departments001(dept_id)
 ) ENGINE=InnoDB;
 
 -- ===============================
 -- 4. Insert Data into Departments
 -- ===============================
-INSERT INTO Departments VALUES
+INSERT INTO Departments001 VALUES
 (101, 'IT'),
 (102, 'HR'),
 (103, 'Finance'),
