@@ -47,3 +47,12 @@ INSERT INTO Issue VALUES
 SELECT * FROM Members;
 SELECT * FROM Books;
 SELECT * FROM Issue;
+
+SELECT 
+    m.member_name,
+    b.title,
+    i.issue_date,
+    i.return_date
+FROM Issue i
+JOIN Members m ON i.member_id = m.member_id
+JOIN Books b ON i.book_id = b.book_id;
