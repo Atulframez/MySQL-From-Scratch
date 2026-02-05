@@ -1,3 +1,9 @@
 CREATE DATABASE library_db;
 USE library_db;
 
+CREATE TABLE Members (
+    member_id INT PRIMARY KEY,
+    member_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50),
+    phone VARCHAR(15)
+) ENGINE=InnoDB;
