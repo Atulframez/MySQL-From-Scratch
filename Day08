@@ -43,3 +43,7 @@ INSERT INTO Issue VALUES
 (2,2,102,'2026-02-03','2026-02-12'),
 (3,3,103,'2026-02-05',NULL);
 -- Query to find all books issued by member with member_id = 2
+
+SELECT * FROM Members;
+SELECT * FROM Books;
+SELECT * FROM Issue;
