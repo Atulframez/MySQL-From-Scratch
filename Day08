@@ -76,4 +76,8 @@ CREATE TABLE Categories (
     category_name VARCHAR(30)
 ) ENGINE=InnoDB;
 
+SET FOREIGN_KEY_CHECKS = 0;
+
 DROP TABLE Books;
+
+SET FOREIGN_KEY_CHECKS = 1;
