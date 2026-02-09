@@ -36,3 +36,8 @@ INSERT INTO Brand VALUES
 INSERT INTO TV VALUES
 (101,'Crystal 4K',55,'4K',55000,1),
 (102,'OLED CX',65,'4K',135000,2);
+
+
+INSERT INTO Laptop VALUES
+(201,'Inspiron 15','Intel i5',16,512,72000,3),
+(202,'Pavilion','Ryzen 7',16,1024,85000,4);
