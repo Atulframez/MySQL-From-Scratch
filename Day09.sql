@@ -41,3 +41,12 @@ INSERT INTO TV VALUES
 INSERT INTO Laptop VALUES
 (201,'Inspiron 15','Intel i5',16,512,72000,3),
 (202,'Pavilion','Ryzen 7',16,1024,85000,4);
+
+
+SELECT
+    b.brand_name,
+    t.model AS tv_model,
+    l.model AS laptop_model
+FROM Brand b
+LEFT JOIN TV t ON b.brand_id = t.brand_id
+LEFT JOIN Laptop l ON b.brand_id = l.brand_id;
