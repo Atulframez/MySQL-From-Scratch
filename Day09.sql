@@ -14,3 +14,15 @@ CREATE TABLE TV (
     CONSTRAINT fk_tv_brand
         FOREIGN KEY (brand_id) REFERENCES Brand(brand_id)
 ) ENGINE=InnoDB;
+
+CREATE TABLE Laptop (
+    laptop_id INT PRIMARY KEY,
+    model VARCHAR(50),
+    processor VARCHAR(40),
+    ram_gb INT,
+    storage_gb INT,
+    price DECIMAL(10,2),
+    brand_id INT,
+    CONSTRAINT fk_laptop_brand
+        FOREIGN KEY (brand_id) REFERENCES Brand(brand_id)
+) ENGINE=InnoDB;
