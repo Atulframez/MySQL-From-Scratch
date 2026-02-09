@@ -32,3 +32,7 @@ INSERT INTO Brand VALUES
 (2,'LG','South Korea'),
 (3,'Dell','USA'),
 (4,'HP','USA');
+
+INSERT INTO TV VALUES
+(101,'Crystal 4K',55,'4K',55000,1),
+(102,'OLED CX',65,'4K',135000,2);
