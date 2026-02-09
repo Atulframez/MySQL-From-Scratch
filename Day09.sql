@@ -26,3 +26,9 @@ CREATE TABLE Laptop (
     CONSTRAINT fk_laptop_brand
         FOREIGN KEY (brand_id) REFERENCES Brand(brand_id)
 ) ENGINE=InnoDB;
+
+INSERT INTO Brand VALUES
+(1,'Samsung','South Korea'),
+(2,'LG','South Korea'),
+(3,'Dell','USA'),
+(4,'HP','USA');
