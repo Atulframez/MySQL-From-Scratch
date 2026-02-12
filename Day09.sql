@@ -51,3 +51,12 @@ SELECT
 FROM Brand b
 LEFT JOIN TV t ON b.brand_id = t.brand_id
 LEFT JOIN Laptop l ON b.brand_id = l.brand_id;
+
+
+SELECT
+    b.brand_name,
+    t.model AS tv_model,
+    l.model AS laptop_model
+FROM Brand b
+LEFT JOIN TV t ON b.brand_id = t.brand_id
+LEFT JOIN Laptop l ON b.brand_id = l.brand_id;
