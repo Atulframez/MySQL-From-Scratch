@@ -53,3 +53,10 @@ INSERT INTO Menu VALUES
 (103,'Cold Coffee','Beverage',120.00),
 (104,'Ice Cream','Dessert',90.00);
 
+
+
+INSERT INTO Orders VALUES
+(1001,1,'2026-02-10',430.00),
+(1002,2,'2026-02-11',180.00),
+(1003,3,'2026-02-12',210.00);
+
