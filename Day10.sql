@@ -56,3 +56,11 @@ INSERT INTO Products VALUES
 (104,'Brownie','Dessert',80.00);
 
 
+
+
+INSERT INTO Orders VALUES
+(1001,1,'2026-02-10',210.00),
+(1002,2,'2026-02-11',140.00),
+(1003,3,'2026-02-12',200.00);
+
+
