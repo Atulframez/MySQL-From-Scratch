@@ -41,3 +41,10 @@ CREATE TABLE OrderDetails (
         FOREIGN KEY (product_id) REFERENCES Products(product_id)
 ) ENGINE=InnoDB;
 
+
+INSERT INTO Customers VALUES
+(1,'Amit','9876543210','Delhi'),
+(2,'Neha','9123456780','Mumbai'),
+(3,'Rahul','9012345678','Pune');
+
+
