@@ -87,3 +87,12 @@ JOIN Customers c ON o.customer_id = c.customer_id
 JOIN Products p ON od.product_id = p.product_id;
 
 
+SELECT
+    p.product_name,
+    SUM(od.quantity) AS total_sold,
+    SUM(od.subtotal) AS total_revenue
+FROM OrderDetails od
+JOIN Products p ON od.product_id = p.product_id
+GROUP BY p.product_name;
+
+
