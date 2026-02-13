@@ -73,3 +73,17 @@ INSERT INTO OrderDetails VALUES
 (5,1003,104,1,80.00);
 
 
+
+
+SELECT
+    c.customer_name,
+    p.product_name,
+    o.order_date,
+    od.quantity,
+    od.subtotal
+FROM OrderDetails od
+JOIN Orders o ON od.order_id = o.order_id
+JOIN Customers c ON o.customer_id = c.customer_id
+JOIN Products p ON od.product_id = p.product_id;
+
+
