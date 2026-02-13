@@ -26,3 +26,18 @@ CREATE TABLE Orders (
     CONSTRAINT fk_order_customer
         FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 ) ENGINE=InnoDB;
+
+
+
+CREATE TABLE OrderDetails (
+    order_detail_id INT PRIMARY KEY,
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    subtotal DECIMAL(8,2),
+    CONSTRAINT fk_od_order
+        FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    CONSTRAINT fk_od_product
+        FOREIGN KEY (product_id) REFERENCES Products(product_id)
+) ENGINE=InnoDB;
+
