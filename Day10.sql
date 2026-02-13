@@ -48,3 +48,11 @@ INSERT INTO Customers VALUES
 (3,'Rahul','9012345678','Pune');
 
 
+
+INSERT INTO Products VALUES
+(101,'Cappuccino','Coffee',120.00),
+(102,'Latte','Coffee',140.00),
+(103,'Veg Sandwich','Snacks',90.00),
+(104,'Brownie','Dessert',80.00);
+
+
