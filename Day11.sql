@@ -86,10 +86,3 @@ JOIN Menu m ON od.item_id = m.item_id;
 
 
 
-SELECT
-    m.item_name,
-    SUM(od.quantity) AS total_sold,
-    SUM(od.subtotal) AS total_revenue
-FROM OrderDetails od
-JOIN Menu m ON od.item_id = m.item_id
-GROUP BY m.item_name;
