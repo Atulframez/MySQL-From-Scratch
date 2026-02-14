@@ -73,7 +73,16 @@ INSERT INTO OrderDetails VALUES
 
 
 
-
+SELECT
+    c.customer_name,
+    m.item_name,
+    o.order_date,
+    od.quantity,
+    od.subtotal
+FROM OrderDetails od
+JOIN Orders o ON od.order_id = o.order_id
+JOIN Customers c ON o.customer_id = c.customer_id
+JOIN Menu m ON od.item_id = m.item_id;
 
 
 
