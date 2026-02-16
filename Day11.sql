@@ -7,7 +7,12 @@ CREATE TABLE Customers (
 
 
 
-
+CREATE TABLE Menu (
+    item_id INT PRIMARY KEY,
+    item_name VARCHAR(50) NOT NULL,
+    category VARCHAR(30),
+    price DECIMAL(7,2)
+) ENGINE=InnoDB;
 
 
 CREATE TABLE Orders (
