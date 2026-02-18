@@ -48,7 +48,11 @@ INSERT INTO Customers VALUES
 
 
 
-
+INSERT INTO Menu VALUES
+(101,'Paneer Butter Masala','Main Course',250.00),
+(102,'Veg Biryani','Main Course',180.00),
+(103,'Cold Coffee','Beverage',120.00),
+(104,'Ice Cream','Dessert',90.00);
 
 
 
