@@ -25,17 +25,7 @@ CREATE TABLE Customers (
 
 
 
-CREATE TABLE OrderDetails (
-    order_detail_id INT PRIMARY KEY,
-    order_id INT,
-    item_id INT,
-    quantity INT,
-    subtotal DECIMAL(8,2),
-    CONSTRAINT fk_od_order
-        FOREIGN KEY (order_id) REFERENCES Orders(order_id),
-    CONSTRAINT fk_od_item
-        FOREIGN KEY (item_id) REFERENCES Menu(item_id)
-) ENGINE=InnoDB;
+
 
 
 
