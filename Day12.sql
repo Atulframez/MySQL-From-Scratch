@@ -17,3 +17,6 @@ SELECT MAX(salary) AS Maximum_Salary FROM Employee;
 
 SELECT COUNT(*) AS Total_Employees FROM Employee;
 SELECT SUM(salary) AS Total_Salary FROM Employee;
+
+SELECT * FROM Employee
+ORDER BY salary ASC;
