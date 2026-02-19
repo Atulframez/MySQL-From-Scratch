@@ -4,3 +4,10 @@ CREATE TABLE Employee (
     department VARCHAR(50),
     salary INT
 );
+
+INSERT INTO Employee VALUES
+(1, 'Amit', 'HR', 25000),
+(2, 'Neha', 'IT', 40000),
+(3, 'Rahul', 'Finance', 35000),
+(4, 'Priya', 'IT', 45000),
+(5, 'Karan', 'HR', 30000);
