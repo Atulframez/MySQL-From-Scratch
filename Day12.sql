@@ -15,3 +15,4 @@ INSERT INTO Employee VALUES
 SELECT MIN(salary) AS Minimum_Salary FROM Employee;
 SELECT MAX(salary) AS Maximum_Salary FROM Employee;
 
+SELECT COUNT(*) AS Total_Employees FROM Employee;
