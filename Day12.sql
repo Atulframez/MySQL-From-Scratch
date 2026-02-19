@@ -13,3 +13,5 @@ INSERT INTO Employee VALUES
 (5, 'Karan', 'HR', 30000);
 
 SELECT MIN(salary) AS Minimum_Salary FROM Employee;
+SELECT MAX(salary) AS Maximum_Salary FROM Employee;
+
