@@ -13,8 +13,7 @@ INSERT INTO Employee VALUES
 (5, 'Karan', 'HR', 30000);
 
 
-SELECT MIN(salary) AS Minimum_Salary FROM Employee;
-SELECT MAX(salary) AS Maximum_Salary FROM Employee;
+
 
 SELECT COUNT(*) AS Total_Employees FROM Employee;
 SELECT SUM(salary) AS Total_Salary FROM Employee;
