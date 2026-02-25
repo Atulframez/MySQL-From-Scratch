@@ -1,9 +1,4 @@
-CREATE TABLE Employee (
-    emp_id INT PRIMARY KEY,
-    emp_name VARCHAR(50),
-    department VARCHAR(50),
-    salary INT
-);
+
 
 INSERT INTO Employee VALUES
 (1, 'Amit', 'HR', 25000),
