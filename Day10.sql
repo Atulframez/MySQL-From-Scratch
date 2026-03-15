@@ -95,6 +95,4 @@ FROM OrderDetails od
 JOIN Products p ON od.product_id = p.product_id
 GROUP BY p.product_name;
 
-
-
-
+-- Streak commit for today
