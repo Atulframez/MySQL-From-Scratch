@@ -30,3 +30,18 @@ START TRANSACTION;
 
 SELECT balance FROM account WHERE id = 1;
 
+UPDATE account 
+SET balance = balance - 20 
+WHERE id = 1;  -- write(a) = 0
+
+COMMIT;
+
+SELECT * FROM account;
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+SELECT * FROM account WHERE balance > 100;
+
+SELECT id, balance FROM account;
