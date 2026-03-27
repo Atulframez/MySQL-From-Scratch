@@ -30,7 +30,11 @@ START TRANSACTION;
 
 SELECT balance FROM account WHERE id = 1;
 
+UPDATE account 
+SET balance = balance - 20 
+WHERE id = 1;  -- write(a) = 0
 
+COMMIT;
 
 SELECT * FROM account;
 
