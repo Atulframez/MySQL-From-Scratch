@@ -1,4 +1,19 @@
+CREATE TABLE account (
+    id INT PRIMARY KEY,
+    balance INT
+);
 
+INSERT INTO account (id, balance) VALUES (1, 100);
+
+START TRANSACTION;
+
+SELECT balance FROM account WHERE id = 1;  -- read(a)
+
+UPDATE account 
+SET balance = balance - 40 
+WHERE id = 1;  -- write(a) = 60
+
+COMMIT;
 
 START TRANSACTION;
 
