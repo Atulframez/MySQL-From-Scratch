@@ -1,4 +1,20 @@
+CREATE DATABASE library_db;
+USE library_db;
 
+CREATE TABLE Members (
+    member_id INT PRIMARY KEY,
+    member_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50),
+    phone VARCHAR(15)
+) ENGINE=InnoDB;
+
+CREATE TABLE Books (
+    book_id INT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    author VARCHAR(50),
+    price DECIMAL(7,2),
+    available_copies INT
+) ENGINE=InnoDB;
 
 CREATE TABLE Issue (
     issue_id INT PRIMARY KEY,
